@@ -1,21 +1,70 @@
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
+/* Navbar */
 .navbar {
-    margin-bottom: 20px;
+    background-color: #343a40;
 }
 
+.nav-link {
+    color: #ffffff !important;
+}
+
+.nav-link:hover {
+    color: #cccccc !important;
+}
+
+/* Tarjetas de proyecto */
 .card {
-    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
 }
 
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.project-img {
+    object-fit: cover;
+    height: 200px;
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+/* Pie de página */
 .footer {
-    padding: 10px 0;
-    background-color: #f8f9fa;
-    text-align: center;
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
 }
 
-.alert {
-    margin-top: 20px;
+.footer p {
+    margin: 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
 }
