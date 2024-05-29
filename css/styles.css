@@ -272,13 +272,22 @@ body {
 .button-container {
     display: flex;
     background-color: rgb(245, 148, 73);
-    width: 550px;
-    height: 40px;
+    width: 100%;
+    height: auto;
     align-items: center;
     justify-content: space-around;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
-        rgb(249, 136, 49) 5px 5px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px, rgb(249, 136, 49) 5px 5px 10px;
+    flex-wrap: wrap; 
+}
+
+/* Ajustes para escritorio */
+@media (min-width: 992px) {
+    .button-container {
+        width: auto;
+        max-width: 650px; 
+
+    }
 }
 
 .button {
@@ -306,9 +315,7 @@ body {
 .navIcon {
     margin-right: 10px;
     height: 80%;
-
 }
-
 
 .btn {
     position: relative;
@@ -357,6 +364,23 @@ body {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
 }
+
+/* Media Query para pantallas pequeñas (móviles y tabletas) */
+@media (max-width: 991.98px) {
+    .button-container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button {
+        margin-bottom: 10px;
+        width: 80%;
+    }
+}
+
 
 
 /*CheckBox*/
